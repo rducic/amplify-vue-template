@@ -1,0 +1,2 @@
+*,:after,:before{box-sizing:border-box}*,body{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased;padding:0}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}#__next,#root{isolation:isolate}#b{height:100vh}#b,#cc{position:relative}#cc{height:100%}:root{--app-header-inner-height:2rem;--app-header-height:calc(var(--app-header-inner-height) + var(--amplify-space-medium)*2)}
+/*# sourceMappingURL=ConsoleV2.css.map*/

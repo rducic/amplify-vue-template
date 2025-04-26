@@ -9,6 +9,11 @@ const client = generateClient<Schema>();
 // create a reactive reference to the array of todos
 const todos = ref<Array<Schema['Todo']["type"]>>([]);
 
+  
+function deleteTodo(id: string) {
+    client.models.Todo.delete({ id })
+  }
+
 function listTodos() {
   client.models.Todo.observeQuery().subscribe({
     next: ({ items, isSynced }) => {
@@ -41,6 +46,7 @@ function createTodo() {
       <li 
         v-for="todo in todos" 
         :key="todo.id">
+        @click="deleteTodo(todo.id)"
         {{ todo.content }}
       </li>
     </ul>
